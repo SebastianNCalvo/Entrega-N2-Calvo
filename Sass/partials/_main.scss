@@ -1,0 +1,213 @@
+/* Estilos del main general */
+
+main{  
+    background-color: $fondo2;
+
+    h2{
+        @include flex-justify(center);
+        font-size: 1.8rem;
+        padding: 1.5rem;
+        text-decoration: underline;
+
+    }
+
+    h3{
+        color: red;
+        font-size: 2.5rem;
+        font-style: normal;
+        margin: 1% 0;
+        padding-left: 30px;
+        text-shadow: -4px 4px 5px #00000099;
+    }
+
+    p{
+        @include tamano (100%, auto);        
+        font-size: 1.6rem;
+        padding-top: 10px;
+    }
+    /* Estilos de Ofertas - Almacén - Panaderia */
+
+    ul{
+        @include flex-justify(space-evenly);
+        list-style: none;    
+        a{
+            font-size: 1.5rem;
+            font-weight:$pesolinks;
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .ofertas-resaltadas{
+        background-color: yellow;
+        @include tamano(20%, auto);
+        text-align: center;
+        margin-left: 10%;
+        margin-top: 2.5%;
+        h3{
+            padding: 0%
+        }
+    }
+
+    img{
+        @include tamano (250px, auto);
+        transition: 200ms;
+        &:hover{
+            translate: 0 -10px;
+        }
+    }   
+
+    .productos{
+        margin: 2% 0;
+    }
+
+    .cajita{
+        
+        @include flex-justify(center);
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 8%;
+        
+        p{
+            font-weight: $pesolinks;
+            font-size: 1.5rem;
+        }
+        span{
+            font-size: 2.5rem;
+        }
+        input{
+            background-color: $fondo1;
+            @include tamano (170px, 50px);
+            border-radius: 35px;
+            font-size: 2rem;
+            font-weight: $pesolinks;
+            border: unset;
+            cursor: pointer;
+            
+        }
+    }
+
+    .img_shadow{
+        box-shadow: -10px 10px 13px -3px rgba(0,0,0,0.58);
+        border-radius: 10%;
+    }
+
+    .carrusel{
+        @include tamano(100%, 50%);
+        @include flex-justify(space-around);
+    }
+
+
+    .caja-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 60px repeat(5, 90px);
+        grid-template-areas:
+        "contacto1 contacto2"
+        "formulario ubicacion"
+        "formulario ubicacion"
+        "formulario ubicacion"
+        "formulario ubicacion"
+        "formulario ubicacion";
+        justify-items: center;
+        padding: 20px 0;
+
+        h2{
+            .contacto1{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+        }
+
+    /* Estilos de Contactos */
+    
+        .formulario{
+            @include tamano(100%, auto);
+            grid-column: 1/2;
+            grid-row: 2/7;
+            display: grid;
+            flex-direction: column;
+
+            .nombre{
+                @include tamano(100%, auto);
+                align-content: center;
+                padding-left: 5%;
+                label{
+                    @include lebel;
+                }
+                input{
+                    @include tamano (75%, 30px);
+                    border-radius: 5px;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .apellido{
+                @extend .nombre;
+            }
+
+            .email{
+                @extend .nombre;
+            }
+
+            .motivo{
+                @extend .nombre;
+                .selector-motivo{
+                    font-size: 2rem;
+                }
+            }    
+            .mensaje{
+                @extend .nombre;
+                textarea{
+                    @include tamano(75%, 30%);
+                    border-radius: 5px;
+                }
+            }
+            .boton_enviar{
+                @include flex-justify(center);
+                margin-left: auto;
+                margin-right: auto;
+                background-color: lightblue;    
+
+                @include tamano(75%, auto);
+                border-radius: 10px;
+                font-size: 2rem;
+            }
+        }
+
+        .ubicacion{
+            @include flex-justify(center);
+            @include tamano(100%, 500%);
+        }
+
+    }
+
+}
+
+#divCarrito{
+    width: 100%;
+    margin: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+table, th, td{
+    font-size: 1.8rem;
+    border: 1px solid black;
+    img{
+        @include tamano (100px, 100px)
+    }
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+    h2{
+        text-decoration: none;
+    }
+}
+
+#divTotales{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}

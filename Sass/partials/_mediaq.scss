@@ -1,0 +1,105 @@
+/* Estilos de las mediaquery*/
+
+@media (max-width:480px){
+    main{
+        .caja-contacto{
+            display: flex;
+            flex-direction: column;
+            .formulario{
+                .nombre{
+                    input{
+                        @include inputmediaq;                        
+                    }
+                }
+                .apellido{
+                    input{
+                        @include inputmediaq;                        
+                    }             
+                }
+                .email{
+                    input{
+                        @include inputmediaq;                        
+                    }                 
+                }
+                .motivo{
+                    input{
+                        @include inputmediaq;                        
+                    }                  
+                }
+                .mensaje{
+                    textarea{
+                        height: $inputmediaq;
+                    }
+
+                }
+            }
+            .ubicacion{
+                @include flex-justify(center);
+                @include tamano(100%, 300px);
+            }
+        }
+
+    }
+
+    footer{
+        @include flex-justify(center);
+        .imagenfb{
+            @include tamano(15%, 75%);
+        }
+        .imagenig{
+            @include tamano(15%, 75%);
+        }
+    }
+
+}
+
+@media (min-width:481px) and (max-width:769px){
+    main{
+        .caja-contacto{
+            display: flex;
+            flex-direction: column;
+            .formulario{
+                .nombre{
+                    input{
+                        @include inputmediaq;
+                    } 
+                }
+                .apellido{
+                    input{
+                        @include inputmediaq;
+                    }                     
+                }
+                .email{
+                    input{
+                        @include inputmediaq;
+                    }                     
+                }
+                .motivo{
+                    input{
+                        @include inputmediaq;
+                    }                     
+                }
+                .mensaje{
+                    textarea{
+                        @include inputmediaq;
+                    }
+
+                }
+            }
+            .ubicacion{
+                @include flex-justify(center);
+                @include tamano(100%, 500px);
+            }
+        }     
+    }
+
+    footer{
+        @include flex-justify(center);
+        .imagenfb{
+            @include tamano(15%, 60%);
+        }
+        .imagenig{
+            @include tamano(15%,60%);
+        }
+    }
+}

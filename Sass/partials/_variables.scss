@@ -1,0 +1,28 @@
+$fondo1:#4f959d;
+
+$fondo2:#f6f7e7;
+
+$pesolinks: bold;
+
+$inputmediaq: 75%;
+
+
+@mixin tamano($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin lebel{
+    display: inline;
+    width: 100%;
+    font-size: 2rem;
+}
+
+@mixin flex-justify($justify){
+    display: flex;
+    justify-content: $justify;
+}
+
+@mixin inputmediaq{
+    height: $inputmediaq;
+}

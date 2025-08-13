@@ -1,0 +1,49 @@
+
+header{
+    @include tamano(100%, auto);
+    display: flex;
+    border: 1px solid black;
+    position: sticky;
+    top: 0px;
+
+    nav{
+        @include tamano(100%, auto);
+        @include flex-justify(center);       
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: $pesolinks;
+        padding-top: 2%;
+        padding: 0px;
+        background-color: $fondo1;
+
+        a{
+            img{
+                @include tamano(70%, auto)
+            }
+        }
+
+        h1{
+            @include tamano(75%, auto);
+            @include flex-justify(end);
+            font-size: 2rem;
+
+            line-height: 100%;
+        }
+
+        ul{
+            li{
+                a{
+                    @include flex-justify(center);
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    font-weight: $pesolinks;
+                    padding-top: 6%;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
