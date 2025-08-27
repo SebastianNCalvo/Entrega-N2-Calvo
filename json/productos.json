@@ -1,0 +1,114 @@
+[
+    {
+        "id" : "milka-oreo",
+        "categoria" : "alfajor",
+        "nombre" : "Alfajor triple Milka Oreo 61gr",
+        "precio" : 1200,
+        "img" : "../multimedia/productos/alfajor-oreo.jpg"
+    },
+    {
+        "id" : "pepito-triple",
+        "categoria" : "alfajor",
+        "nombre" : "Alfajor triple Pepitos 57gr",
+        "precio" : 1200,
+        "img" : "../multimedia/productos/alfajor-pepito.jpg"
+    },
+    {
+        "id" : "terrabusi",
+        "categoria" : "alfajor",
+        "nombre": "Alfajor Terrabusi clasico 50gr",
+        "precio": 850,
+        "img":  "../multimedia/productos/alfajor-terrabusi.jpg"
+    },
+    {
+        "id" : "shot-con-mani",
+        "categoria" : "alfajor",
+        "nombre": "Alfajor triple Shot con maní 60gr",
+        "precio": 1200,
+        "img": "../multimedia/productos/alfajor-trishot.jpg"
+    },
+    {
+        "id" : "cofler-almendras",
+        "categoria" : "chocolate",
+        "nombre": "Chocolate Cofler con almendras 55gr",
+        "precio": 2400,
+        "img": "../multimedia/productos/chocolate-cofler-almendras.jpg"
+    },
+    {
+        "id" : "cofler-rocklets",
+        "categoria" : "chocolate",
+        "nombre": "Chocolate Cofler con Rocklets 55gr",
+        "precio": 2400,
+        "img": "../multimedia/productos/chocolate-cofler-rocklets.jpg"
+    },
+    {
+        "id" : "cofler-block",
+        "categoria" : "chocolate",
+        "nombre": "Chocolate Cofler Block 300gr",
+        "precio": 7400,
+        "img": "../multimedia/productos/chocolate-cofler-block.jpg"
+    },
+    {
+        "id" : "cofler-tres-placeres",
+        "categoria" : "chocolate",
+        "nombre": "Chocolate Cofler tres placeres 55gr",
+        "precio": 2400,
+        "img": "../multimedia/productos/chocolate-cofler-tres-placeres.jpg"
+    },
+    {
+        "id" : "jamon-serrano",
+        "categoria" : "snack",
+        "nombre": "Papas fritas Jamón serrano Lays 77 gr",
+        "precio": 3150,
+        "img": "../multimedia/productos/papas-fritas-lays-jamon-serrano.jpg"
+    },
+    {
+        "id" : "ketchup",
+        "categoria" : "snack",
+        "nombre": "Papas fritas sabor Ketchup Lays 77 gr",
+        "precio": 2950,
+        "img": "../multimedia/productos/papas-fritas-lays-ketchup.jpg"
+    },
+    {
+        "id" : "pehuamar-acanaladas",
+        "categoria" : "snack",
+        "nombre": "Papas fritas acanaladas Pehuamar 485 gr",
+        "precio": 8500,
+        "img": "../multimedia/productos/papas-fritas-pehuamar-acanaladas.jpg"
+    },
+    {
+        "id" : "pehuamar-clasicas",
+        "categoria" : "snack",
+        "nombre": "Papas fritas clasicas Pehuamar 485 gr",
+        "precio": 8500,
+        "img": "../multimedia/productos/papas-fritas-pehuamar-clasica.jpg"
+    },
+    {
+        "id" : "pizza-muzzarella-2",
+        "categoria" : "pizza",
+        "nombre": "Pizza Mozzarella 2 und Sibarita 940gr",
+        "precio": 18000,
+        "img": "../multimedia/productos/pizza1.jpg"
+    },
+    {
+        "id" : "pizza-mozzarella-XL",
+        "categoria" : "pizza",
+        "nombre": "Pizza Mozzarella XL Sibarita 680gr",
+        "precio": 13300,
+        "img": "../multimedia/productos/pizza2.jpg"
+    },
+    {
+        "id" : "pizza-mozzarella-clasica",
+        "categoria" : "pizza",
+        "nombre": "Pizza Mozzarella clásica Sibarita 470gr",
+        "precio": 9500,
+        "img": "../multimedia/productos/pizza3.jpg"
+    },
+    {
+        "id" : "pizza-mozzarella-jyq",
+        "categoria" : "pizza",
+        "nombre": "Pizza Mozzarella y jamón Sibarita 530gr",
+        "precio": 13300,
+        "img": "../multimedia/productos/pizza4.jpg"
+    }
+]
