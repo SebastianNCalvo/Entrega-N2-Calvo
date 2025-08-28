@@ -1,6 +1,7 @@
 const arrayCarrito = JSON.parse(localStorage.getItem("Carrito"))
 console.log(arrayCarrito)
 let total = 0
+let cantidad = 1
 
 
 const cargarDomCarrito = () => {
@@ -12,11 +13,11 @@ const cargarDomCarrito = () => {
             <tr>
                 <td><img class="img_shadow" src="${producto.img}" alt=""></td>
                 <td><h2>${producto.nombre}</h2></td>
+                <td><h2>${cantidad}</h2></td>
                 <td><h2>${producto.precio}</h2></td>
             </tr>
-            
             `;
-    tablaCarrito.appendChild(tabla)
+        tablaCarrito.appendChild(tabla)
     });
 }
 
@@ -30,11 +31,8 @@ const cargarTotal = () => {
             <td><h2>${total}</h2></td>
         </tr>
         `;
-    totalCarrito.appendChild(tabla)
-        
-    
+    totalCarrito.appendChild(tabla)    
 }
 
 cargarDomCarrito()
 cargarTotal()
-console.log(total)
